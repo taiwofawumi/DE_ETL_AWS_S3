@@ -18,8 +18,8 @@ def main():
     
     #Init Connection to S3
     s3 = boto3.resource('s3',
-                        aws_access_key_id='AKIAQI6PL3I45NHTMZWP',
-                        aws_secret_access_key='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')
+                        aws_access_key_id='**************',
+                        aws_secret_access_key='**************')
     bucket_src = s3.Bucket(src_bucket)
     bucket_trg = s3.Bucket(trg_bucket)
     
@@ -92,8 +92,8 @@ main()
 #Init Connection to S3
 trg_bucket = 'xetra-1234-tfaw'
 s3 = boto3.resource('s3',
-                    aws_access_key_id='AKIAQI6PL3I45NHTMZWP',
-                    aws_secret_access_key='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')
+                    aws_access_key_id='**************',
+                    aws_secret_access_key='**************')
 bucket_trg = s3.Bucket(trg_bucket)
 
 for obj in bucket_trg.objects.all():
